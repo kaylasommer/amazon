@@ -1,7 +1,7 @@
-## name of project
+## Amazon
 ### Code Badges
-build status icon
-coverage status icon
+[![Build Status](https://travis-ci.org/kaylalynjones/amazon.svg)](https://travis-ci.org/kaylalynjones/amazon)
+[![Coverage Status](https://coveralls.io/repos/kaylalynjones/amazon/badge.png)](https://coveralls.io/r/kaylalynjones/amazon)
 
 ### Screenshots
 ![Image1](https://raw.githubusercontent.com/nss-cohort-2014-06-07/express-template/master/docs/screenshots/one.jpg)
