@@ -1,4 +1,4 @@
-.navbar.navbar-default(role='navigation')
+.navbar(role='navigation')
   .container-fluid
     .navbar-header
       button.navbar-toggle(data-toggle='collapse', data-target='#bs-navbar-collapse')
@@ -6,17 +6,26 @@
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand(href='/') Template
+      a.navbar-brand(href='/') Amazon Hack
 
     .collapse.navbar-collapse#bs-navbar-collapse
       ul.nav.navbar-nav.navbar-right
         if user
+          li: a(href='/profile') Profile &nbsp
+            i.fa.fa-wrench.fa-fw.fa-lg
           li
             form.navbar-form(method='post', action='/logout')
               .form-group
                 input(type='hidden', name='_method', value='delete')
-                button.btn.btn-danger= user.email
+                button.btn.btn-danger= user.email || user.username || user.login || user.displayName
         else
-          li: a(href='/register') Register
-          li: a(href='/login') Login
-
+          li: a(href='/register') Register &nbsp
+            i.fa.fa-rocket.fa-fw.fa-lg
+          li: a(href='/login') Login &nbsp
+            i.fa.fa-puzzle-piece.fa-fw.fa-lg
+          li: a(href='#') Login With &nbsp
+          li: a(href='/auth/twitter'): i.fa.fa-twitter.fa-fw.fa-lg
+          li: a(href='/auth/github'): i.fa.fa-github-alt.fa-fw.fa-lg
+          li: a(href='/auth/google'): i.fa.fa-google.fa-fw.fa-lg
+          li: a(href='/auth/facebook'): i.fa.fa-facebook.fa-fw.fa-lg
+          li: a(href='/auth/instagram'): i.fa.fa-instagram.fa-fw.fa-lg
