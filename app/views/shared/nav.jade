@@ -11,6 +11,8 @@
     .collapse.navbar-collapse#bs-navbar-collapse
       ul.nav.navbar-nav.navbar-right
         if user
+          li: a(href='/products') Products &nbsp
+            i.fa.fa-binoculars.fa-fw.fa-lg
           li: a(href='/profile') Profile &nbsp
             i.fa.fa-wrench.fa-fw.fa-lg
           li
@@ -23,7 +25,6 @@
             i.fa.fa-rocket.fa-fw.fa-lg
           li: a(href='/login') Login &nbsp
             i.fa.fa-puzzle-piece.fa-fw.fa-lg
-          li: a(href='#') Login With &nbsp
           li: a(href='/auth/twitter'): i.fa.fa-twitter.fa-fw.fa-lg
           li: a(href='/auth/github'): i.fa.fa-github-alt.fa-fw.fa-lg
           li: a(href='/auth/google'): i.fa.fa-google.fa-fw.fa-lg
