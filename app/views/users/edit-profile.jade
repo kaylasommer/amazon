@@ -1,0 +1,19 @@
+extends ../shared/template
+block content
+  .row
+    h3.text-center Edit Your Profile
+    .col-xs-3
+    .col-xs-6
+      form#edit-profile(role='form', method='post', action='/profile/edit')
+        input(type='hidden', name='_method', value='put')
+        .form-group
+          label(for='email') Email
+          input.form-control#email(type='email', name='email', value=user.email, autofocus=true)
+        .form-group
+          label(for='age') Age
+          input.form-control#age(type='number', name='age', value=user.age)
+        .form-group
+          label(for='photo') Photo
+          input.form-control#photo(type='text', name='photo', placeholder='Show us your pretty face!')
+        button#edit-profile-submit.btn.btn-info(type='submit') Submit
+     .col-xs-3

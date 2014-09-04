@@ -1,0 +1,21 @@
+extends ../shared/template
+block content
+  h2.text-center Product List
+  .col-xs-2
+  .col-xs-8
+    table.table.table-bordered.table-hover
+      thead
+        th Name
+        th Photo
+        th Price
+      tbody
+        each product in products
+          tr
+            td: a(href='#')= product.name
+            td: img.product-img.thumbnail(src='#{product.photo}')
+            td $#{(product.price).toFixed(2)}
+    .col-xs-2
+
+block scripts
+
+

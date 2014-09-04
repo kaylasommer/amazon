@@ -1,0 +1,15 @@
+extends ../shared/template
+block content
+  .row
+    .col-xs-3
+    .col-xs-3
+      .profile-pic.img-circle(style='background-image: url(#{user.photo});')
+    .col-xs-3
+      .col-xs-12.profile-info
+        h3= user.displayName
+        h3= user.email || user.username || user.login
+        h5= user.age
+        a(href='/profile/edit').btn.btn-info Edit Profile
+    .col-xs-3
+block scripts
+

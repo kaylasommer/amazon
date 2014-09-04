@@ -1,0 +1,30 @@
+{
+  "_id":{"$oid":"000000000000000000000001"},
+  "name":"Paint Brush",
+  "price":10.20,
+  "photo":"http://advanced-roofing-systems.com/wp-content/uploads/2013/12/Down-To-Earth-Paint-Brush1.jpg"
+},
+{
+  "_id":{"$oid":"000000000000000000000002"},
+  "name":"Bucket",
+  "price":5.35,
+  "photo":"http://wpcontent.answcdn.com/wikipedia/commons/thumb/3/31/Balde.PNG/250px-Balde.PNG"
+},
+{
+  "_id":{"$oid":"000000000000000000000003"},
+  "name":"Charcoal Pencils",
+  "price":9.70,
+  "photo":"http://farm6.staticflickr.com/5545/11932584004_1bca42b3e9.jpg"
+},
+{
+  "_id":{"$oid":"000000000000000000000004"},
+  "name":"Prisma Color Pencils",
+  "price":157.90,
+  "photo":"http://www.wetcanvas.com/Community/images/05-Sep-2008/90309-holbein-pencils.jpg"
+},
+{
+  "_id":{"$oid":"000000000000000000000005"},
+  "name":"Roll of Canvas",
+  "price":215.20,
+  "photo":"http://ecx.images-amazon.com/images/I/51A9SXV52QL.jpg"
+}
