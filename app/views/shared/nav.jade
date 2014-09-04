@@ -11,6 +11,8 @@
     .collapse.navbar-collapse#bs-navbar-collapse
       ul.nav.navbar-nav.navbar-right
         if user
+          li: a(href='/cart') Cart &nbsp
+            i.fa.fa-shopping-cart.fa-fw.fa-lg
           li: a(href='/products') Products &nbsp
             i.fa.fa-binoculars.fa-fw.fa-lg
           li: a(href='/profile') Profile &nbsp

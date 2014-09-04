@@ -32,4 +32,9 @@ config.instagram = {
   callbackURL : 'http://kayla-vm.com:3333/auth/instagram/callback'
 };
 
+config.stripe = {
+  publishKey : 'pk_test_7FwAQbFq8Lc0FprSIJvFT5bc',
+  secretKey : process.env.STRIPE_SECRET
+};
+
 module.exports = config;
