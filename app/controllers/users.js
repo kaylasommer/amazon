@@ -35,7 +35,7 @@ exports.edit = function(req, res){
 };
 
 exports.update = function(req, res){
-  req.user.update (req.body, function(){
+  req.user.update(req.body, function(){
     req.flash('notice', 'You have updated your profile.');
     res.redirect('/profile');
   });

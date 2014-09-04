@@ -2,6 +2,7 @@
 
 var local       = require('./local'),
     twitter     = require('./twitter'),
+    instagram   = require('./instagram'),
     github      = require('./github'),
     facebook    = require('./facebook'),
     google      = require('./google'),
@@ -11,6 +12,7 @@ var local       = require('./local'),
 module.exports = function(passport, app){
   passport.use(local);
   passport.use(twitter);
+  passport.use(instagram);
   passport.use(google);
   passport.use(facebook);
   passport.use(github);

@@ -70,7 +70,6 @@ User.googleAuthenticate = function(accessToken, refreshToken, google, cb){
 };
 
 User.facebookAuthenticate = function(token, secret, facebook, cb){
-  console.log(facebook);
   User.collection.findOne({facebookId:facebook.id}, function(err, user){
     if(user){return cb(null, user);}
     user = {facebookId:facebook.id, displayName: facebook.displayName, type:'facebook'};
@@ -78,5 +77,12 @@ User.facebookAuthenticate = function(token, secret, facebook, cb){
   });
 };
 
+User.instagramAuthenticate = function(token, secret, instagram, cb){
+  User.collection.findOne({instagramId:instagram.id}, function(err, user){
+    if(user){return cb(null, user);}
+    user = {instagramId:instagram.id, displayName: instagram.displayName, username: instagram.username, type:'instagram'};
+    User.collection.save(user, cb);
+  });
+};
 module.exports = User;
 
